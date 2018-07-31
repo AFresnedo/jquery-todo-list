@@ -1,2 +1,14 @@
 /* add enough style to keep delete button left of task */
  /* why left? because message length is variable but start isn't */
+
+.list-item {
+  width: 50%;
+  margin: 0 auto;
+  background-color: blue;
+}
+
+.content-item {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}

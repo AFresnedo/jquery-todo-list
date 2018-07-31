@@ -5,11 +5,7 @@
 var btn = $('#sticky');
 console.log(btn, ' is the button');
 
-//
-// TODO delete task
-//
-// get delete button
-// add event listener to delete button
+// grab task and delete all its children along with it
 function delTask() {
   console.log('delete task detected');
 }

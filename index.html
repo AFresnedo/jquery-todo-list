@@ -3,11 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Andres' ToDo Lister</title>
 </head>
 <body>
-  <div class="todo-list" id="list">
-   <!-- placeholder for individual task container(s)  -->
+  <div class="list" id="list-id">
+   <!-- container for both delete and content -->
+   <div class="list-item">
+     <div class="delete-item"></div>
+     <div class="content-item"></div>
+   </div>
   </div>
   <form>
     <input id="input" type="text" placeholder="add thing todo here"></input>

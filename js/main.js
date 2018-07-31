@@ -24,7 +24,7 @@ function addToList() {
   var content = $('#input').val();
   console.log(content, ' is the input');
   // create list item
-  var newDiv = $('<li></li>');
+  var newDiv = $('<div></div>');
   newDiv.text(content);
   // append list item
   list.append(newDiv);
@@ -38,8 +38,14 @@ function addDel() {
 
 // create a new task in the list
 function createTask() {
-  addToList();
-  addDel();
+  // create container for task
+  var taskCon = $('<div></div>');
+  // append task container to todo list container
+  list.append(taskCon);
+  // add task content to task container
+  addToList(taskCon);
+  // add del button to task container
+  addDel(taskCon);
 }
 
 //

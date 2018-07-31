@@ -14,6 +14,8 @@ console.log(btn, ' is the button');
 //
 // add list item
 //
+
+// append content (li ele)
 function addToList() {
   // get list element
   var list = $('#list');
@@ -26,7 +28,18 @@ function addToList() {
   newDiv.text(content);
   // append list item
   list.append(newDiv);
-  // TODO where to add delete button?
+}
+
+// give new li a delete button
+function addDel() {
+  // create button
+  newDel = $('<button></button>');
+}
+
+// create a new task in the list
+function createTask() {
+  addToList();
+  addDel();
 }
 
 //
@@ -34,5 +47,5 @@ function addToList() {
 //
 btn.on("click", function(e){
   e.preventDefault();
-  addToList();
+  createTask();
 });

@@ -10,6 +10,9 @@ console.log(btn, ' is the button');
 //
 // get delete button
 // add event listener to delete button
+function delTask() {
+  console.log('delete task detected');
+}
 
 //
 // add list item
@@ -33,7 +36,8 @@ function addDel(container) {
   console.log('begin addDel()');
   // create button
   newDel = $('<button></button>');
-  // TODO give button an id (UUID?)
+  // add event listener
+  newDel.on('click', delTask)
   // append
   container.append(newDel);
 }

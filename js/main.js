@@ -36,6 +36,7 @@ function addDel(container) {
   console.log('begin addDel()');
   // create button
   newDel = $('<button></button>');
+  // TODO give button text
   // add event listener
   newDel.on('click', delTask)
   // append
